@@ -1,0 +1,45 @@
+{
+    "name": "webpatser/fledge-portable-ascii",
+    "description": "PHP 8.5 optimized portable-ascii for Fledge — max performance with ext-mbstring.",
+    "type": "library",
+    "keywords": ["ascii", "transliterate", "slug", "unicode", "php85", "fledge"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christoph Kempen",
+            "homepage": "https://github.com/webpatser"
+        }
+    ],
+    "require": {
+        "php": "^8.5",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.0 || ^4.0"
+    },
+    "suggest": {
+        "ext-intl": "For fastest transliteration via ICU (strict mode)"
+    },
+    "replace": {
+        "voku/portable-ascii": "2.0.99",
+        "webpatser/portable-ascii": "3.99.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "voku\\": "src/voku/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
