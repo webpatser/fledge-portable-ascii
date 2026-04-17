@@ -1,12 +1,12 @@
 # webpatser/fledge-portable-ascii
 
-PHP 8.5 optimized drop-in replacement for [`voku/portable-ascii`](https://github.com/voku/portable-ascii) — built for [Fledge](https://github.com/webpatser/fledge-framework).
+PHP 8.5 optimized drop-in replacement for [`voku/portable-ascii`](https://github.com/voku/portable-ascii), built for [Fledge](https://github.com/webpatser/fledge-framework).
 
 ## Why a separate package?
 
 The base [`webpatser/portable-ascii`](https://github.com/webpatser/portable-ascii) supports PHP 8.1+ and conditionally detects extensions at runtime. This variant requires PHP 8.5 and ext-mbstring, removing all conditionals for maximum performance:
 
-- No runtime capability detection — mbstring is always available
+- No runtime capability detection: mbstring is always available
 - `mb_str_split()` directly (no `preg_match_all` fallback)
 - `mb_convert_encoding()` for UTF-8 cleaning (no regex fallback)
 - All PHP 8.5 features enabled unconditionally
@@ -23,7 +23,7 @@ Replaces both `voku/portable-ascii` and `webpatser/portable-ascii` via Composer'
 
 - PHP 8.5+
 - ext-mbstring (required, not optional)
-- ext-intl (optional — used in strict transliteration mode)
+- ext-intl (optional, used in strict transliteration mode)
 
 ## Usage
 
