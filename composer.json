@@ -15,7 +15,7 @@
         "ext-mbstring": "*"
     },
     "require-dev": {
-        "pestphp/pest": "^3.0 || ^4.0"
+        "pestphp/pest": "^3.0 || ^4.0 || ^5.0"
     },
     "suggest": {
         "ext-intl": "For fastest transliteration via ICU (strict mode)"
